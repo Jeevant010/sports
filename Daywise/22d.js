@@ -71,3 +71,32 @@ console.log(car1);
 
   * WE can't overload a constructor
   */
+
+
+// function greet(){
+//     console.log("this is a great function")
+// }
+
+const greet = function(){
+    console.log("This is a unnamed function")
+}
+
+const greet1 = () =>{
+    console.log(this)
+
+}
+
+greet()
+/***
+ * 
+ * This will return the window object on calling
+ 
+const helo = funciton(){
+    return this
+}
+
+ * 
+ */
+const car = new Car();
+console.log(car);
+
