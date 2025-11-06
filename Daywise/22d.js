@@ -100,3 +100,32 @@ const helo = funciton(){
 const car = new Car();
 console.log(car);
 
+const ar = ["a", "b" ,"c", "d", "e", "f"]
+const ar2 = ar;
+ar2.pop()
+console.log(ar)
+
+const ar3 = ar.map(e => e)
+ const ar4 = ar.map(function(e){
+    return e
+ })
+ console.log(ar3,ar4)
+
+ const newRa = []
+ const ra = [ 1, 2, 3, 4, 5, 6 ,3 ,5 ,6 ,34 , 5 ]
+ ra.forEach(function(e){
+    if(e%2 === 0) newRa.push(e)
+ })
+
+console.log(ra)
+console.log(newRa)
+
+const fil = ra.filter(function(items){
+    return items % 2 === 1
+})
+
+const newarr = ra.filter((items)=> items%2 ===0)
+console.log(`new : arr  ${newarr}`)
+
+console.log(fil)
+
