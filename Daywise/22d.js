@@ -137,3 +137,16 @@ const sum = ra.reduce(function(a,b){
 })
 console.log(sum)
 
+
+class Student {
+    constructor(name, batch){
+        this.name = name
+        this.batch =batch
+    }
+
+    study(){
+        console.log("studying")
+    }
+}
+
+const s1 = new Student("John", "DRE#12")
