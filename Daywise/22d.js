@@ -18,26 +18,56 @@ console.log(window.document.querySelector("p").textContent); // "Hello"
 // }
 // console.log(obj)
 
-// class Car {
-//     constructor(model, make){
-//         this.make = make;
-//         this.model = model; 
-//     }
-// }
+class Car {
+    constructor(model, make){
+        console.log(this);
+        this.make = make;
+        this.model = model; 
+    }
+}
 
 console.log(window.innerHeight)
 console.log(window.innerWidth)
 // window.alert("this is a alert!")
 // const name  = window.prompt("What's your name ?")
 
-const car = {
-    make : "mercedes-benz",
-    model : "GLE-3",
-    move:function(){
-        console.log(this)
+// const car = {
+//     make : "mercedes-benz",
+//     model : "GLE-3",
+//     move:function(){
+//         console.log(this)
         
+//     }
+// }
+
+// car.move()
+
+const car1 = new Car("BMW", "A5");
+console.log(car1);
+// console.log(car1.model)
+// console.log(car1.make)
+
+ const car2 = new Car("BMW", "A7");
+
+ console.log(car2)
+
+
+ /**
+  * 
+  * 
+  class Car {
+    constructor(make, model){
+        
+    this.make = make
+    this.mode = model
+    }
+    constructor(model, make){
+        console.log(this);
+        this.make = make;
+        this.model = model; 
     }
 }
 
-car.move()
 
+  * WE can't overload a constructor
+  */
