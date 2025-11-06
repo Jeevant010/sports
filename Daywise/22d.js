@@ -129,3 +129,11 @@ console.log(`new : arr  ${newarr}`)
 
 console.log(fil)
 
+const ele = ra.find((item) => item == 6);
+console.log(ele)
+
+const sum = ra.reduce(function(a,b){
+    return a+b
+})
+console.log(sum)
+
