@@ -22,3 +22,9 @@ console.log(response);
 //   console.log(response);
 // },7000);
 
+response.then((data) => {
+  console.log("this thing", data);
+  return data.url
+}).then((data) => {
+  console.log(data);
+});
