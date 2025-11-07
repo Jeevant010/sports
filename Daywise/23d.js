@@ -116,3 +116,18 @@ console.log(...ra, ...ra2);
 const ra4 = [...ra, 5, 6];
 console.log(ra4);
 
+const car5 = {
+    brand : "merceders"
+}
+const car6 = {
+    type : "V8"
+}
+
+console.log({...car5, ...car6});
+
+const name = "Hello";
+const age = 32;
+console.log(name + " is " + age + " years old.");
+
+console.log(`${name} is ${age} years old.`);
+console.log(`${name} is ${age>20 ? 'old' : 'young'}.`)
