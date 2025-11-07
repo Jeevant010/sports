@@ -19,3 +19,6 @@ const add1 = function (a, b) {
 // console.log(add1([5 , 6], [4, 6]));
 
 
+const arr = [1, 2, 3, 4, 5];
+
+const a2 = arr.
