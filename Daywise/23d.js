@@ -28,6 +28,10 @@ console.log(a2);
 const Car =  {
     make : "Mercedes-Benz",
     model : "W13",
+    year : 2323,
+    engine : "lenovo",
+    doors : 2,
+    left : "hello",
 
     move : function() {
         console.log(this)
@@ -67,4 +71,34 @@ const Car =  {
 // console.log(b1, b2, b3);
 
 // console.log(aa, bb, cc, dd);
+
+
+const {make, year, engine} = Car;
+
+console.log(make, year, engine);
+
+const newObj = {
+    make:Car.make,
+    model : Car.model,
+    engine: Car.engine,
+}
+
+console.log(newObj)
+
+let { doors : hello} = Car;
+console.log(hello)
+
+const car = {
+    brand : "Ford",
+    engine : {
+        capacity : "5.8L",
+        type : "V7",
+        fuel : '(petrol)'
+    }
+}
+
+const {engine:{capacity}} = car
+console.log(capacity)
+
+console.log(engine)
 
