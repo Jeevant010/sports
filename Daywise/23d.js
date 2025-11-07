@@ -102,3 +102,17 @@ console.log(capacity)
 
 console.log(engine)
 
+const ra = [1, 2, 3];
+const ra2 = [4, 5];
+
+// Spread operator
+
+console.log(...ra);
+console.log(...ra2);
+const ra3 = [...ra, ...ra2]
+console.log(ra3);
+
+console.log(...ra, ...ra2);
+const ra4 = [...ra, 5, 6];
+console.log(ra4);
+
