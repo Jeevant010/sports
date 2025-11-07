@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Jeevant Sharma",
   "type": "commonjs",
-  "main": "24d.js",
+  "main": "25d.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node 24d.js",
