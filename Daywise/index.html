@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script type="module" defer src="./27d.js"></script>
-    <!-- Here this defer laods the java script after the page or html loads to have a good practice -->
+    <!-- Here this defer loads the java script after the page or html loads to have a good practice -->
     <title>Document</title>
+    <style>
+        div.clock{
+            width : 150px;
+            height : 150px;
+            border: 2px solid crimson;
+            border-radius: 50% ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s ease-out;
+            position: relative;
+            transform: rotate(-90deg);
+        }
+        div.second{
+            transition: 0.2s ease-in;
+        }
+
+        div.second::after{
+            content: "";
+            width : 75px;
+            height : 4px;
+            background-color: yellow;
+            position: absolute;
+            border-end-end-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <div id="root1">
@@ -25,6 +51,9 @@
         <li> item 3 </li>
     </ul>
     <h1 class="timer" id="timer"> timer </h1>
+    <div class="clock">
+        <div class="second"></div>
+    </div>
 
 </body>
 </html>

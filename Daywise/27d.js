@@ -73,10 +73,14 @@ ar.map(todo => {
 //     clearInterval(timer);
 // }, 10000)
 
-const timer = document.querySelector("#timer")
+
+// clock
+const timer = document.querySelector("#timer");
+const secondHand = document.querySelector('div.second');
 let time = 0;
 const t = setInterval(() => {
     // console.log("hi")
     time++;
+    secondHand.style = `transform:rotate(${time*6}deg)`;
     timer.innerHTML = time;
 }, 1000)
