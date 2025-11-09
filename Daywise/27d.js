@@ -89,10 +89,17 @@ fetch('https://jsonplaceholder.typicode.com/todos')
 // clock
 const timer = document.querySelector("#timer");
 const secondHand = document.querySelector('div.second');
+const minuteHand = document.querySelector('div.minute');
 let time = 0;
+let tim = 0;
+let minute = 0;
 const t = setInterval(() => {
     // console.log("hi")
-    time++;
+    minute = tim/60;
+    if(time === 59) time -= 60;
+     time++;
+     tim++;
     secondHand.style = `transform:rotate(${time*6}deg)`;
+    minuteHand.style = `transform:rotate(${minute*6}deg)`;
     timer.innerHTML = time;
 }, 1000);
