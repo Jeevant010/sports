@@ -55,10 +55,28 @@ const ar = [ "eat food" , "go for a walk", "Workout", "sleep"]
 ar.map(todo => {
     const add = document.createElement('li')
     // add.innerHTML = todo
-    const text = document.createTextNode(todo)
-    // console.log(add)
-    console.log(text)
+    // const text = document.createTextNode(todo)
+    // // console.log(add)
+    // console.log(text)
+    // // id.appendChild(add)
+    // add.appendChild(text)
     // id.appendChild(add)
-    add.appendChild(text)
-    id.appendChild(add)
+
+    add.innerHTML = `<h1>${todo}</h1>`;
 })
+
+// const timer = setInterval(() => {
+//     console.log("hi")
+// },1000)
+
+// setTimeout(() => {
+//     clearInterval(timer);
+// }, 10000)
+
+const timer = document.querySelector("#timer")
+let time = 0;
+const t = setInterval(() => {
+    // console.log("hi")
+    time++;
+    timer.innerHTML = time;
+}, 1000)
