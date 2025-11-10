@@ -15,13 +15,18 @@
         <h1>Computer Score : <span id="comp"></span></h1>
         <h1>Your Score : <span id="you"></span></h1>
     </div>
-    <div class="message">
-
+    <div style="color:#ffb010; font-size:large" id="message">
+        <h1>Rules</h1>
+        <ul>
+            <li>Rock beats Scissors</li>
+            <li>Paper beats Rock</li>
+            <li>Scissors beats Paper</li>
+        </ul>
     </div>
     <div class="buttons">
-        <button class="rock">Rock</button>
-        <button class="rock">Paper</button>
-        <button class="rock">Scissor</button>
+        <button class="rock" onclick="game(0)">Rock</button>
+        <button class="rock" onclick="game(1)">Paper</button>
+        <button class="rock" onclick="game(2)">Scissors</button>
     </div>
 </body>
 </html>
