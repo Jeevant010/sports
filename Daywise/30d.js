@@ -1,4 +1,4 @@
-const button = document.querySelector("button")
+// const button = document.querySelector("button");
 
 
 // const handleClick = (e) => {
@@ -22,13 +22,28 @@ const button = document.querySelector("button")
 
 
 
-const handleMove = (e) => {
-    console.log({
-        X : event.clientX,
-        Y : event.clientY
-    }, 
-    e);
-}
+// const handleMove = (e) => {
+//   console.log({
+//     X: e.clientX,
+//     Y: e.clientY
+//   });
+
+//   const dot = document.createElement('div');
+//   dot.style = `
+//     position: absolute;
+//     width: 5px;
+//     height: 5px;
+//     background-color: dodgerblue;
+//     top: ${e.clientY}px;
+//     left: ${e.clientX}px;
+//     border-radius: 50%;
+//   `;
+  
+//   document.body.appendChild(dot);
+// };
+
 
 // document.addEventListener("mousedown", handleMove);
-document.addEventListener("mousemove", handleMove);
+// document.addEventListener("mousemove", handleMove);
+
+

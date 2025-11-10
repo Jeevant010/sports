@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Trail</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background: #f9f9f9;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  const handleMove = (e) => {
+    const dot = document.createElement('div');
+    dot.style.position = 'absolute';
+    dot.style.width = '5px';
+    dot.style.height = '5px';
+    dot.style.backgroundColor = 'dodgerblue';
+    dot.style.borderRadius = '50%';
+    dot.style.top = `${e.clientY}px`;
+    dot.style.left = `${e.clientX}px`;
+    dot.style.pointerEvents = 'none'; 
+    document.body.appendChild(dot);
+
+    
+    <!-- setTimeout(() => dot.remove(), 500); -->
+  };
+
+  document.addEventListener('mousemove', handleMove);
+</script>
+
+</body>
+</html>
