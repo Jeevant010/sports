@@ -23,3 +23,17 @@ const dosomething = async () => {
 
 dosomething();
 console.log(2);
+
+// const getData = ( async () => {
+//     try {
+//         const response = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
+//         console.log(response);
+//     }
+//     catch(e) {
+//         console.log("error occured", e);
+//     }
+// });
+
+// // getData();
+// const interval = setInterval(getData, 2000);
+
